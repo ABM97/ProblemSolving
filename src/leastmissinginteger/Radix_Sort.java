@@ -13,7 +13,7 @@ import java.util.Arrays;
  */
 
 public class Radix_Sort {
-    public int getMin(int[] arr) {
+    static public int getMin(int[] arr) {
         int min = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] < min) {
@@ -23,7 +23,7 @@ public class Radix_Sort {
         return min;
     }
 
-    public int getMax(int[] arr){
+    static public int getMax(int[] arr){
         int max = arr[0];
         for(int i = 1; i < arr.length; i++){
             if(arr[i] > max){
@@ -33,7 +33,7 @@ public class Radix_Sort {
         return max;
     }
     
-    public void countSort(int[] arr, int exp){
+    static public void countSort(int[] arr, int exp){
         int [] result = new int[arr.length];
         int [] count_arr = new int[10];
         Arrays.fill(result, 0);
@@ -56,7 +56,7 @@ public class Radix_Sort {
         }
     }
     
-    public int[] Sort(int [] arr){
+    static public void Sort(int [] arr){
         int min = getMin(arr);
         int factor = 0;
         if (min < 0) {
@@ -74,6 +74,5 @@ public class Radix_Sort {
                arr[i] -= factor;
            }
        }
-       return arr;
     }
 }
