@@ -17,7 +17,7 @@ public class LeastMissingInteger {
     public static void main(String[] args) {
         // TODO code application logic here
         Radix_Sort c1 = new Radix_Sort();
-        int [] arr = {170,45,75,90,802,24,2,66};
+        int [] arr = {12,11,-13,-5,6,-7,5,-3,-6};
         int[] sorted = c1.Sort(arr);
         for(int i = 0; i < sorted.length; ++i){
             System.out.print(sorted[i] + " ");
